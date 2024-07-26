@@ -1,17 +1,14 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { selectNameFilter } from '../../redux/filters/filtersSlice.js';
+import { selectNameFilter } from '../../redux/filtersSlice.js';
 import ContactForm from '../ContactForm/ContactForm';
 import SearchBox from '../SearchBox/SearchBox';
 import ContactList from '../ContactList/ContactList';
 import css from './App.module.css';
-import { fetchContacts } from '../../redux/contacts/contactsOps.js';
+import { fetchContacts } from '../../redux/contactsOps.js';
 import Loader from '../Loader/Loader';
 import Error from '../Error/Error';
-import {
-  selectIsError,
-  selectLoading,
-} from '../../redux/contacts/contactsSelectors.js';
+import { selectIsError, selectLoading } from '../../redux/contactsSlice.js';
 
 export default function App() {
   const filter = useSelector(selectNameFilter);
