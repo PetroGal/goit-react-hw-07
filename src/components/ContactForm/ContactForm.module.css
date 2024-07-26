@@ -2,7 +2,6 @@
   width: 360px;
   display: flex;
   flex-direction: column;
-  /* border: 2px solid blue; */
 }
 
 .nameWrap {
@@ -22,7 +21,7 @@
   height: 40px;
   margin: 0 auto;
   font-size: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .nameInput {
